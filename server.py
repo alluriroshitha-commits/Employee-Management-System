@@ -349,7 +349,6 @@ def employees():
 
 @app.route("/edit-employee/<int:id>")
 def edit_employee_page(id):
-
     connection = get_db_connection()
 
     employee = connection.execute("""
